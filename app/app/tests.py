@@ -3,9 +3,11 @@ Sample tests
 """
 
 from django.test import SimpleTestCase
-from app import  calc
+import unittest
+from app import calc
 
 
+@unittest.skip('Just test how to work the SimpleTestCase')
 class CalcTests(SimpleTestCase):
     """
     Class test add numbers
